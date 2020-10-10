@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang ="en">
+	<head>
+		<title>Calculator</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link href="calculadoraA.css" rel="stylesheet" type="text/css">
+		<script src ="mainA.js"></script>
+	</head>
+
+<div class="MiCalculadora">
+	<!-- Aqui empieza la definicion de todos los botones que va a llevar la calculadora -->
+	<form name="calculadora" id="calculadora">
+		<input type="text" name="inputwindow" id="inputwindow">
+		<div>
+			<input type="button" id="one"   value="1" onclick="va(document.getElementById('one').value)">
+			<input type="button" id="two"   value="2" onclick="va(document.getElementById('two').value)">
+			<input type="button" id="three" value="3" onclick="va(document.getElementById('three').value)">
+			<input type="button" id="plus"  value="+" onclick="va(document.getElementById('plus').value)">
+	    </div>
+	    <div>
+			<input type="button" id="four"  value="4" onclick="va(document.getElementById('four').value)">
+			<input type="button" id="five"  value="5" onclick="va(document.getElementById('five').value)">
+			<input type="button" id="six"   value="6" onclick="va(document.getElementById('six').value)">
+			<input type="button" id="minus" value="-" onclick="va(document.getElementById('minus').value)">
+		</div>
+		<div>
+			<input type="button" id="seven" value="7" onclick="va(document.getElementById('seven').value)">
+			<input type="button" id="eight" value="8" onclick="va(document.getElementById('eight').value)">
+			<input type="button" id="nine"  value="9" onclick="va(document.getElementById('nine').value)">
+			<input type="button" id="multiplicacion" value="*" onclick="va(document.getElementById('multiplicacion').value)">
+	    </div>
+	    <div>
+			<input type="button" id="zero" value="0" onclick="va(document.getElementById('zero').value)">
+			<input type="button" id="zero2" value="00" onclick="va(document.getElementById('zero2').value)">
+			<input type="button" id="decimal" value="." onclick="va(document.getElementById('decimal').value)">
+			<input type="button" id="div" value="/" onclick="va(document.getElementById('div').value)">
+				
+	    </div>
+	    <div class="results">
+			<input type="button" id="equal" value="=" onclick="calculateResult()">
+			<button type="button" id="clear" value="" onclick="clearInput(document.getElementById('clear').value)">Clear</button>
+	    </div>
+
+	</form>	
+	</div>
+	
+
+</html>
